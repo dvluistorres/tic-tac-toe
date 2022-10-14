@@ -1,0 +1,160 @@
+:root{
+    --pageWidth: min(1400px , 100vw);
+}
+
+body{
+    background-color: #e2d75d;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    font-weight:500;
+    margin: 30px;
+    color:#6A2C70;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+
+.content {
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+.right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.button {
+    background-image: linear-gradient(92.88deg, #F08A5D 9.16%, #F08A5D 43.89%, #B83B5E 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    user-select: none;
+    width: 250px;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+  }
+
+  #player1Name,
+  #player2Name{
+    /*outline: none;*/
+	border: none;
+    resize: none;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    background-color: #6A2C70;
+    font-weight: bolder;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    border: 10px auto;
+    line-height: 50px;
+    color: white;
+}
+
+#player1Output,
+#player2Output{
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #6A2C70;
+    margin-top: 0px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-content: center;
+    gap: 15px;
+}
+
+.gameBoard {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    position: center;
+    flex-wrap: wrap;
+    width: calc(0.4 * var(--pageWidth));
+    height: calc(0.4 * var(--pageWidth));
+    padding: 0px;
+    margin: auto;
+    flex:1;
+    align-content: flex-start;
+    background-color: #e2d75d;
+}
+
+.square {
+    background-color: white;
+    width: calc(0.4 / 3 * var(--pageWidth) - 6px);;
+    height: calc(0.4 / 3 * var(--pageWidth) - 6px);;
+    border: 1px inset black;
+
+}
+
+.square:hover {
+    background-color: rgb(177, 33, 33);
+    transition: 0.2s;
+    scale: 1.05;
+}
+
+/** table **/
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    flex: initial;
+    width: fit-content;
+    align-self: center;
+  }
+  
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: rgb(235,235,235);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <body onload="" ondragstart="return false">
+        <div class="header">Tic Tac Toe</div>
+        <div class="content">
+            <div class="left">
+                <textarea id="player1Name"></textarea>
+                <h3 id="player1Output">Player 1</h3>
+            </div>
+            <div class="middle">
+                <div class="gameBoard">
+                    <div class="square 1"></div>
+                    <div class="square 2"></div>
+                    <div class="square 3"></div>
+                    <div class="square 4"></div>
+                    <div class="square 5"></div>
+                    <div class="square 6"></div>
+                    <div class="square 7"></div>
+                    <div class="square 8"></div>
+                    <div class="square 9"></div>
+                </div>
+                <table class="gameScore">
+                    <tr>
+                        <th id="tableP1">Player 1 score</th>
+                        <th id="tableP2">Player 2 score</th>
+                    </tr>
+                    <tr>
+                        <td id="tableScore1">0</td>
+                        <td id="tableScore2">0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right">
+                <textarea id="player2Name"></textarea>
+                <h3 id="player2Output">Player 2</h3>
+                <button class="button" onclick="player2Pc()" >Pc Second Player</button>
+            </div>
+        </div>
+    </body>
+</body>
+<script src="./script.js"></script>
+</html>
