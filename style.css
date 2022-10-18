@@ -15,6 +15,8 @@ body{
     margin: 30px;
     color:#6A2C70;
     font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    flex: 0 1 auto;
+    flex-wrap: nowrap;
 }
 
 .content {
@@ -55,7 +57,7 @@ body{
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     user-select: none;
-    width: 250px;
+    width: min (250px; 100%);
   }
   
   .button:hover {
@@ -118,6 +120,11 @@ body{
     width: calc(0.4 / 3 * var(--pageWidth) - 6px);;
     height: calc(0.4 / 3 * var(--pageWidth) - 6px);;
     border: 1px inset black;
+    font-weight: bolder;
+    font-size: calc(0.4 / 3 * var(--pageWidth) * 0.8 - 6px);
+    text-align: center;
+    padding: auto;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
 
 }
 
